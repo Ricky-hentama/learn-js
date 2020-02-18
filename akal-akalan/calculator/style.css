@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+h1 {
+  text-align: center;
+}
+.calculator {
+  max-height: 500px;
+  width: 400px;
+  background-color: rgb(46, 170, 208);
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.layar {
+  height: 100px;
+  width: 400px;
+  background-color: rgb(226, 230, 244);
+  font-size: 40px;
+  line-height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nomor {
+  background-color: wheat;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+}
+
+.nomor:hover {
+  background-color: lightskyblue;
+}
+
+.operasi {
+  background-color: pink;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+.kali {
+  font-size: 45px;
+}
+.kurang {
+  font-weight: bolder;
+}
+.hasil {
+  width: 200px;
+}
+
+.operasi:hover {
+  background-color: lightskyblue;
+}
