@@ -26,3 +26,19 @@ function hitung(a, b) {
 
 const { kurang1, jumlah1 } = hitung(100, 200);
 console.log(jumlah1); // output = 300
+
+// Destructuring function 'Arguments'
+const mhs = {
+  nama: "Ricky Hentama",
+  no: 28,
+  alamat: {
+    kota: "Purwokerto",
+    provinsi: "Jawa Tengah"
+  }
+};
+
+function cetakMhs({ nama, alamat: { kota } }) {
+  return `halo nama saya adalah ${nama}, saya tinggal dikota ${kota}`;
+}
+
+console.log(cetakMhs(mhs));
