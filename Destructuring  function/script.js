@@ -11,8 +11,8 @@ console.log(jumlah);
 
 //menggunakan destructuring
 //namun nama variable harus urut/sama dengan yg ada di dalam function
-const [plus, minus] = kalkulasi(10, 20);
-console.log(plus);
+const [plus, minus] = kalkulasi(20, 20);
+console.log(plus); // output : 40
 
 //jika ingin nama variable tidak ingin harus sama/urut dengan yg di function
 //maka yg di-return adalah object
@@ -24,5 +24,5 @@ function hitung(a, b) {
   };
 }
 
-const { jumlah1, kurang1 } = hitung(100, 200);
+const { kurang1, jumlah1 } = hitung(100, 200);
 console.log(jumlah1); // output = 300
