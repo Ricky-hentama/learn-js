@@ -16,3 +16,12 @@ const administrasi = ["mega", "dika", "agil"];
 const gabung = [...teknisi, ...administrasi];
 
 console.log(gabung);
+
+//mengcopy array
+/* kita bisa saja menggunakan const atlit2 = atlit,
+namun itu hanya cerminan saja. maksudnya jika salah satu array ada yg diubah maka keduanya akan berubah
+*/
+const atlit = ["Reza", "Adit", "Fajar"];
+const atlit2 = [...atlit, "janu"];
+
+console.log(atlit2);
