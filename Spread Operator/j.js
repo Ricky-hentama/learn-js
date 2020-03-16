@@ -25,3 +25,8 @@ const atlit = ["Reza", "Adit", "Fajar"];
 const atlit2 = [...atlit, "janu"];
 
 console.log(atlit2);
+
+let h1 = document.querySelector(".nama");
+let huruf = [...h1.textContent].map(h => `<span>${h}</span>`).join("");
+h1.innerHTML = huruf;
+console.log(h1);
