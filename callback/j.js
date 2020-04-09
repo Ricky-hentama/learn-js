@@ -1,7 +1,6 @@
-$.ajax({
-  type: "method",
-  url: "url",
-  data: "data",
-  dataType: "json",
-  success: function (data) {},
+array.forEach(function (e) {
+  console.log(e);
+});
 
+//contoh arrow func
+array.forEach((e) => console.log(e));
