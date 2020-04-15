@@ -16,6 +16,7 @@ $.ajax({
                 <li class="list-group-item">Tahun : ${e.Year}</li>
                 
               </ul>
+              
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
