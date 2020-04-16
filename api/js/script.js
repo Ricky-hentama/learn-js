@@ -33,8 +33,27 @@ $.ajax({
         type: "post",
         url: "http://www.omdbapi.com/?apikey=84244aeb&i=" + imdb,
         data: "json",
-        success: function (detail) {
-          console.log(detail);
+        success: function (d) {
+          let modal = "";
+          modal += ` <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-3"> <img src="${d.Poster}" class="img-fluid">
+                        </div>
+                        <div class="col">
+                          <ul class="list-group">
+                            <li class="list-group-item"><strong>Genre :</strong> ${d.Genre}</li>
+                            <li class="list-group-item"><strong>Released :</strong> ${d.Released}</li>
+                            <li class="list-group-item">
+                              <strong>Director : </strong> ${d.Director}
+                            </li>
+                            <li class="list-group-item">
+                              <strong>Plot :</strong><br /> ${d.Plot}
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>`;
+          $(".modal-body").html(modal);
         },
       });
     });
